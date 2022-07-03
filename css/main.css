@@ -1,5 +1,6 @@
 :root{
     --btn-neon-color:#d0bdd5;
+    --btn-half-neon-color:#cf8ee1a9;
     --btn-neon-active-color:#fff;
     --bg-primary:#0e1c37;
     --bg-secondary:#200c39;
@@ -77,14 +78,29 @@ body{
 }
 
 .navbar-slide{
-    transform:translateX(-100%);
+    transform:translateX(0%);
     position: fixed;
     height: 100vh;
-    background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--btn-neon-color) 100%);
+    background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
 }
+
+.profile-img{
+    width: 12em;
+    height:12em;
+}
+
+#resume-btn{
+    color:var(--bg-primary);
+}
+
 .navbar-content a li{
     width:100vw;
     list-style: none;
+    border-top:1px solid var(--btn-half-neon-color);
+}
+
+.navbar-content a:first-child li{
+    border:none;
 }
 
 .slider-container{
