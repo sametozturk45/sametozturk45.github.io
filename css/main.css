@@ -78,11 +78,12 @@ body{
 }
 
 .navbar-slide{
-    transform:translateX(0%);
+    transform:translateX(-100%);
     position: fixed;
     height: 100vh;
     z-index: 15;
     background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+    transition:ease-in-out 0.5s;
 }
 
 .profile-img{
@@ -140,4 +141,9 @@ body{
     background-color:var(--bg-primary-card);
     border-radius: 1em;
     box-shadow: 0 0 0.2em 0.01em #000000;
+}
+
+.max-height{
+    max-height: 100vh;
+    overflow: hidden;
 }
