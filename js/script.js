@@ -22,4 +22,5 @@ closeBar.addEventListener("click",function(){
 openBar.addEventListener("click",function(){
     navbar.style.transform = "translateX("+(0)+"%)";
     body.classList.add("max-height");
+    window.scrollTo({top:0,behavior:'smooth'});
 });

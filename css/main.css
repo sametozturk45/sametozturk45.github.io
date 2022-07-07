@@ -1,6 +1,7 @@
 :root{
     --btn-neon-color:#d0bdd5;
     --btn-half-neon-color:#cf8ee1a9;
+    --white:#fff;
     --btn-neon-active-color:#fff;
     --bg-primary:#0e1c37;
     --bg-secondary:#200c39;
@@ -11,9 +12,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+*::selection{
+    background-color:var(--btn-half-neon-color);
+    color:var(--white);
+}
 body{
     background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-    min-height: 100vh;
+    height: 100%;
 }
 
 .btn-neon{
@@ -78,12 +83,23 @@ body{
 }
 
 .navbar-slide{
-    transform:translateX(-100%);
+    transform:translateX(100%);
     position: fixed;
-    height: 100vh;
+    top:0;right:0;
+    height: 100%;
     z-index: 15;
     background:linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
     transition:ease-in-out 0.5s;
+}
+
+.navbar-content a li{
+    width:100%;
+    list-style: none;
+    border-top:1px solid var(--btn-half-neon-color);
+}
+
+.navbar-content a:first-child li{
+    border:none;
 }
 
 .profile-img{
@@ -95,15 +111,6 @@ body{
     color:var(--bg-primary);
 }
 
-.navbar-content a li{
-    width:100vw;
-    list-style: none;
-    border-top:1px solid var(--btn-half-neon-color);
-}
-
-.navbar-content a:first-child li{
-    border:none;
-}
 
 .slider-container{
     width: 100%;
@@ -146,4 +153,8 @@ body{
 .max-height{
     max-height: 100vh;
     overflow: hidden;
+}
+
+#closeBar{
+    cursor: pointer;
 }
