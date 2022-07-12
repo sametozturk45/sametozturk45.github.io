@@ -1,6 +1,6 @@
 let lightbulb = document.getElementById("bulb");
 let siteStatus = 0;
-let closeBar = document.getElementById("closeBar");
+let closeBar = document.getElementsByClassName("close-bar");
 let openBar = document.getElementById("openBar");
 let openAbout = document.getElementById("openAbout");
 let navbar = document.getElementById("navbar");
@@ -16,13 +16,14 @@ lightbulb.addEventListener("click",function(){
         siteStatus = 0;
     }
 });
-
-closeBar.addEventListener("click",function(){
-    navbar.style.transform = "translateX("+(100)+"%)";
-    body.classList.remove("max-height");
-    setTimeout(()=>{navbarContent.classList.remove("d-none");
-    aboutMe.classList.remove("d-none");},500);
-});
+for(var i =0; i<closeBar.length; i++){
+    closeBar[i].addEventListener("click",function(){
+        navbar.style.transform = "translateX("+(100)+"%)";
+        body.classList.remove("max-height");
+        setTimeout(()=>{navbarContent.classList.remove("d-none");
+        aboutMe.classList.remove("d-none");},500);
+    });
+}
 
 openBar.addEventListener("click",function(){
     aboutMe.classList.add("d-none");
