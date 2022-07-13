@@ -182,6 +182,12 @@ article{
     background-color: var(--bg-primary);
 }
 
+@media screen and (min-width:1280px) {
+    .project{
+        height: 30rem;
+    }
+}
+
 .project img{
     width: 100%;
     height: 16em;
@@ -215,7 +221,7 @@ article{
 }
 
 .experience-card{
-    display: flex;
+    display: flexbox;
     width:100%;
     height:max-content;
     padding: 1rem 0.5rem;
