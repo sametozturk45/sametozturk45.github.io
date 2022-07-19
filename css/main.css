@@ -4,7 +4,9 @@
     --white:#fff;
     --btn-neon-active-color:#fff;
     --bg-primary:#0e1c37;
+    --bg-primary-half:#26498d;
     --bg-secondary:#200c39;
+    --bg-secondary-half:#501c8f;
     --bg-primary-card:#0e1c3733;
     --text-important:#6496cd;
 }
@@ -225,6 +227,7 @@ article{
     width:100%;
     height:max-content;
     padding: 1rem 0.5rem;
+    background-color: var(--bg-primary-half);
 }
 
 .experience-card:first-child{
