@@ -182,15 +182,15 @@ article{
     background-color: var(--bg-primary);
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:768px) {
     .project{
-        height: 30rem;
+        height: 24rem;
     }
 }
 
 .project img{
     width: 100%;
-    height: 16em;
+    height: 100%;
     opacity: .8;
     z-index: 0;
 }
@@ -225,16 +225,10 @@ article{
     width:100%;
     height:max-content;
     padding: 1rem 0.5rem;
-    border-top:1px solid var(--btn-half-neon-color);
 }
 
 .experience-card:first-child{
     border:none;
-}
-
-.experience-card:where(h3,h5){
-    display: inline-block;
-    justify-content: space-between;
 }
 
 footer{
@@ -242,4 +236,8 @@ footer{
     width: 100%;
     height: 30rem;
     background-color: white;
+}
+
+small{
+    font-size: 0.75rem;
 }
