@@ -222,6 +222,7 @@ article{
     transition: 500ms ease-in-out;
 }
 
+.qualification-card,
 .experience-card{
     display: flexbox;
     width:100%;
@@ -230,10 +231,14 @@ article{
     background-color: var(--bg-primary-half);
 }
 
+.qualification-card:first-child,
 .experience-card:first-child{
     border:none;
 }
 
+.qualification-card img{
+    height: 2rem;
+}
 footer{
     float: left;
     width: 100%;
