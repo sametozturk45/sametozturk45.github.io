@@ -10,6 +10,12 @@
     --bg-primary-card:#0e1c3733;
     --text-important:#6496cd;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: url(../Fonts/Inter.ttf) format("truetype");
+}
+
 *{
     margin:0;
     padding: 0;
