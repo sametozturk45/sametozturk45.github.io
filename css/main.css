@@ -14,6 +14,7 @@
 @font-face {
     font-family: "Inter";
     src: url(../Fonts/Inter.ttf) format("truetype");
+    font-display: swap;
 }
 html{
     overflow-y: overlay;
@@ -237,6 +238,13 @@ article{
     height:max-content;
     padding: 1rem 0.5rem;
     background-color: var(--bg-primary-half);
+}
+
+@media (max-width:30em)
+{
+    .experience-card .for-desktop{
+        display:none;
+    }
 }
 
 .qualification-card:first-child,
