@@ -240,7 +240,7 @@ article{
     background-color: var(--bg-primary-half);
 }
 
-@media (max-width:30em)
+@media (max-width:36em)
 {
     .experience-card .for-desktop{
         display:none;
