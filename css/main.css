@@ -15,7 +15,9 @@
     font-family: "Inter";
     src: url(../Fonts/Inter.ttf) format("truetype");
 }
-
+html{
+    overflow-y: overlay;
+}
 *{
     margin:0;
     padding: 0;
